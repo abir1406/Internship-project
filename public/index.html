@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Arkadeep Chowdhury</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-brand">
+            <span class="highlight">Arkadeep</span> Chowdhury
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="hero-name">Arkadeep Chowdhury</h1>
+            <h2 class="hero-role">Full-Stack Web Developer</h2>
+
+            <p class="hero-desc">
+                I build beautiful, fast, and responsive web applications.
+                Passionate about turning ideas into digital reality.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Hire Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQGUicWX8P7PAw/profile-displayphoto-shrink_400_400/B56ZdQoUviGQAk-/0/1749404456257?e=1782950400&v=beta&t=JD66K0Smw-WdtviESMNEg79WOZ9R119HbDlQGWSZB_8" alt="Profile Photo">
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>HTML & CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="90"></div>
+                </div>
+                <span>90%</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="80"></div>
+                </div>
+                <span>80%</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🚀</div>
+                <h3>Node.js</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="70"></div>
+                </div>
+                <span>70%</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-img">🛒</div>
+                <h3>E-Commerce Store</h3>
+                <p>A full-stack shopping site with cart and payment.</p>
+
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+
+                <a href="#" class="btn btn-small">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+
+            <div class="form-group">
+                <textarea id="message" rows="6" placeholder="Your Message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message ✉
+            </button>
+
+            <p id="form-status"></p>
+
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
